@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     /* Light Theme Color Palette - HSL Values */
     --background: 0 0% 100%; /* Pure white background */
