@@ -3,307 +3,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DocGuardian - Professional Plagiarism Detection</title>
-    <meta name="description"
-        content="Professional plagiarism detection service with advanced algorithms and AI-powered analysis">
-    <meta name="author" content="DocGuardian">
-
-    <meta property="og:title" content="DocGuardian - Professional Plagiarism Detection">
-    <meta property="og:description"
-        content="Professional plagiarism detection service with advanced algorithms and AI-powered analysis">
-    <meta property="og:type" content="website">
+    <title>Plagario - Plagiarism & AI Detection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="./index.html" class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <span class="logo-text">DocGuardian</span>
-                </a>
-
-                <nav class="nav">
-                    <a href="./index.html" class="nav-link" data-page="home">Home</a>
-                    <a href="./check.html" class="nav-link">Check Document</a>
-                </nav>
-
-                <div class="header-actions">
-                    <a class="btn btn-hero" href="./check.html">
-                        <i class="fas fa-file-text"></i>
-                        Start Check
-                    </a>
+        <div class="container header-content">
+            <a href="./index.html" class="logo">
+                <img src="./assets/step4.png"  height="50px" width="50px" ></img>
+                <div class="logo-text">
+                    <span>Plagario</span>
+                    <h6>by Wisdomedx</h6>
                 </div>
+            </a>
+            <nav class="nav">
+                <a href="#home-page" class="nav-link active" data-page="home">Home</a>
+                <a href="#services-page" class="nav-link" data-page="services">Services</a>
+                <a href="#pricing-page" class="nav-link" data-page="pricing">Pricing</a>
+                <a href="#about-page" class="nav-link" data-page="about">About</a>
+                <a href="./check.html" class="nav-link" data-page="check">Check Now</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="btn-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="btn-icon"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="btn btn-hero">Sign In</a>
             </div>
         </div>
     </header>
+
     <!-- Home Page -->
-    <div id="home-page" class="page active">
+    <main id="home-page" class="page">
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title animate-bounce-in">
-                            Professional Plagiarism
-                            Detection
-                        </h1>
-                        <p class="hero-description">
-                            Ensure your documents are original with our advanced plagiarism detection system.
-                            Fast, accurate, and reliable results every time.
-                        </p>
-
+            <div class="container hero-content">
+                <div class="hero-text animate-fade-in">
+                    <span class="hero-badge">Trusted by 10,000+ Researchers</span>
+                    <h1 class="hero-title">Ensure Your Work is Original with Plagario</h1>
+                    <p class="hero-description">Advanced plagiarism and AI detection for academic and professional documents.</p>
+                    <div class="hero-upload">
                         <div class="hero-buttons">
-                            <a class="btn btn-hero btn-lg hover-scale" href="./check.html">
-                                <i class="fas fa-file-text"></i>
-                                Start Plagiarism Check
-                            </a>
-                            <button class="btn btn-outline btn-lg hover-scale">
-                                <i class="fas fa-users"></i>
-                                Learn More
-                            </button>
-                        </div>
-
-                        <!-- Stats -->
-                        <div class="stats">
-                            <div class="stat">
-                                <div class="stat-number">50K+</div>
-                                <div class="stat-label">Documents Checked</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-number">99.9%</div>
-                                <div class="stat-label">Accuracy Rate</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-number">24/7</div>
-                                <div class="stat-label">Support Available</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-number">&lt; 1min</div>
-                                <div class="stat-label">Average Processing</div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Features Section -->
-        <section class="features">
-            <div class="svg" style="background-color: #E4F4FF;">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Why Choose DocGuardian?</h2>
-                        <p>Our comprehensive plagiarism detection service offers everything you need to ensure document
-                            originality.</p>
-                    </div>
-                    <div class="features-grid">
-                        <div class="feature-card card-glow hover-lift animate-bounce-in">
-                            <div class="feature-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h3>Advanced Detection</h3>
-                            <p>State-of-the-art algorithms to detect plagiarism across multiple sources</p>
-                        </div>
-        
-                        <div class="feature-card card-glow hover-lift animate-bounce-in" style="animation-delay: 0.1s">
-                            <div class="feature-icon">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                            <h3>AI-Powered Analysis</h3>
-                            <p>Optional AI check for enhanced accuracy and detailed insights</p>
-                        </div>
-        
-                        <div class="feature-card card-glow hover-lift animate-bounce-in" style="animation-delay: 0.2s">
-                            <div class="feature-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <h3>Flexible Delivery</h3>
-                            <p>Choose from immediate, 1-day, or flexible delivery options</p>
-                        </div>
-        
-                        <div class="feature-card card-glow hover-lift animate-bounce-in" style="animation-delay: 0.3s">
-                            <div class="feature-icon">
-                                <i class="fas fa-file-check"></i>
-                            </div>
-                            <h3>Multiple Formats</h3>
-                            <p>Support for PDF and DOCX files up to 10,000 pages</p>
+                            <button class="btn btn-hero btn-lg" id="start-plagiarism-check">Start Plagiarism Check</button>
+                            <p class="ai-report-link"><a href="#">👉 Want to check AI also? Get full AI report here.</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="./assets/wave.svg" style="rotate: 180deg;">
         </section>
-        <!-- How It Works Section (Added Steps) -->
-        <section class="how-it-works">
+
+        <!-- Manuscript Ribbon -->
+        <section class="promo-ribbon" id="manuscript-ribbon">
+            <div class="container promo-content">
+                <h3>Do you want us to write your manuscript/thesis?</h3>
+                <div class="promo-buttons">
+                    <a href="#" class="btn btn-hero" data-page="services">Yes, I want Wisdomedx to handle my manuscript writing</a>
+                    <button class="btn btn-outline" onclick="dismissRibbon('manuscript-ribbon')">No, I will do it myself</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+      <section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat hover-lift" data-animation-delay="0.1s">
+                <i class="fas fa-file-alt stat-icon"></i>
+                <div class="stat-number">50K+</div>
+                <div class="stat-label">Documents Checked</div>
+            </div>
+            <div class="stat hover-lift" data-animation-delay="0.2s">
+                <i class="fas fa-check-circle stat-icon"></i>
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Accuracy Rate</div>
+            </div>
+            <div class="stat hover-lift" data-animation-delay="0.3s">
+                <i class="fas fa-clock stat-icon"></i>
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Fast Processing</div>
+            </div>
+            <div class="stat hover-lift" data-animation-delay="0.4s">
+                <i class="fas fa-bolt stat-icon"></i>
+                <div class="stat-number">10M+</div>
+                <div class="stat-label">Sources Scanned</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- Features -->
+<section class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose Plagario?</h2>
+            <p>Our platform offers comprehensive tools to ensure your work is original and credible.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card hover-lift" data-animation-delay="0.1s">
+                <span class="feature-icon"><i class="fas fa-search"></i></span>
+                <h3>Plagiarism Detection</h3>
+                <p>Scan your document against billions of sources for unmatched accuracy.</p>
+            </div>
+            <div class="feature-card hover-lift" data-animation-delay="0.2s">
+                <span class="feature-icon"><i class="fas fa-robot"></i></span>
+                <h3>AI Content Check</h3>
+                <p>Identify AI-generated content to maintain authenticity.</p>
+            </div>
+            <div class="feature-card hover-lift" data-animation-delay="0.3s">
+                <span class="feature-icon"><i class="fas fa-file-alt"></i></span>
+                <h3>Detailed Reports</h3>
+                <p>Get comprehensive reports with actionable insights.</p>
+            </div>
+            <div class="feature-card hover-lift" data-animation-delay="0.4s">
+                <span class="feature-icon"><i class="fas fa-lock"></i></span>
+                <h3>Secure Processing</h3>
+                <p>Your documents are protected with top-tier encryption.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- Services Section -->
+<section id="services-page" class="page services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Explore our range of services to support your academic and professional needs.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card hover-lift" data-animation-delay="0.1s">
+                <span class="service-icon"><i class="fas fa-search"></i></span>
+                <h3>Plagiarism Detection</h3>
+                <p>Check your documents against billions of sources to ensure originality.</p>
+            </div>
+            <div class="service-card hover-lift" data-animation-delay="0.2s">
+                <span class="service-icon"><i class="fas fa-robot"></i></span>
+                <h3>AI Content Analysis</h3>
+                <p>Detect AI-generated content with advanced algorithms.</p>
+            </div>
+            <div class="service-card hover-lift" data-animation-delay="0.3s">
+                <span class="service-icon"><i class="fas fa-pen"></i></span>
+                <h3>Manuscript Writing</h3>
+                <p>Let our experts craft high-quality manuscripts and theses tailored to your needs.</p>
+            </div>
+            <div class="service-card hover-lift" data-animation-delay="0.4s">
+                <span class="service-icon"><i class="fas fa-book"></i></span>
+                <h3>Journal Publication</h3>
+                <p>Assistance with publishing your research in Scopus-indexed journals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- How It Works (Steps) -->
+        <section class="steps">
             <div class="container">
                 <div class="section-header">
                     <h2>How It Works</h2>
-                    <p>Simple steps to ensure your document's originality with DocGuardian.</p>
+                    <p>Follow these simple steps to ensure your document is original.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card hover-lift animate-bounce-in">
+                        <span class="step-icon"><i class="fas fa-upload"></i></span>
+                        <h3>1. Upload Document</h3>
+                        <p>Submit your PDF or DOCX file securely through our platform.</p>
+                    </div>
+                    <div class="step-card hover-lift animate-bounce-in">
+                        <span class="step-icon"><i class="fas fa-search"></i></span>
+                        <h3>2. Run Plagiarism Check</h3>
+                        <p>Our system scans against billions of sources and AI content.</p>
+                    </div>
+                    <div class="step-card hover-lift animate-bounce-in">
+                        <span class="step-icon"><i class="fas fa-file-alt"></i></span>
+                        <h3>3. Receive Report</h3>
+                        <p>Get a detailed report with actionable insights.</p>
+                    </div>
                 </div>
             </div>
-            <div class="steps">
-                <div class="step-card card-glow hover-lift animate-bounce-in">
-                    <img src="./assets/step1.png" alt="">
-                </div>
-        
-                <div class="step-card card-glow hover-lift animate-bounce-in" style="animation-delay: 0.1s">
-                    <img src="./assets/step2.png" alt="">
-                </div>
-        
-                <div class="step-card card-glow hover-lift animate-bounce-in" style="animation-delay: 0.2s">
-                    <img src="./assets/step3.png" alt="">
-                </div>
-                <div class="step-card card-glow hover-lift animate-bounce-in" style="animation-delay: 0.2s">
-                    <img src="./assets/step4.png" alt="">
-                </div>
-            </div>
-        
         </section>
 
+        <!-- About Us Section -->
+        <section id="about-page" class="page about">
+            <div class="container about-content">
+                <div class="about-text animate-fade-in">
+                    <h2>About Plagario</h2>
+                    <p>Plagario, powered by Wisdomedx, is dedicated to ensuring the originality and credibility of academic and professional work. Our advanced plagiarism and AI detection tools help researchers, students, and professionals maintain integrity in their documents.</p>
+                    <p>Our team of experts provides comprehensive services, from manuscript writing to journal publication assistance, ensuring your work meets the highest standards.</p>
+                    <a href="#services-page" class="btn btn-hero">Explore Our Services</a>
+                </div>
+                <div class="about-image animate-bounce-in">
+                    <img src="./assets/herobackground1.png" alt="About Plagario" class="about-img" onerror="this.alt='About image failed to load'; this.style.border='1px solid red';">
+                    <div class="about-overlay"></div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Pricing Section -->
-        <section class="pricing">
+        <!-- Pricing -->
+        <section id="pricing-page" class="page pricing">
             <div class="container">
                 <div class="section-header">
-                    <h2>Transparent Pricing</h2>
-                    <p>Pay only for what you need with our flexible page-based pricing system.</p>
+                    <h2>Pricing Plans</h2>
+                    <p>Choose a plan that fits your needs, with transparent pricing.</p>
                 </div>
-
                 <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <h3>Basic Check</h3>
-                        <div class="price">₹2<span>/page</span></div>
+                    <div class="pricing-card hover-lift">
+                        <h3>Basic</h3>
+                        <div class="price">₹99<span>/check</span></div>
                         <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Up to 100 pages</li>
-                            <li><i class="fas fa-check"></i> Standard detection</li>
-                            <li><i class="fas fa-check"></i> Email delivery</li>
+                            <li><i class="fas fa-check"></i> Plagiarism Check</li>
+                            <li><i class="fas fa-check"></i> Up to 100 Pages</li>
+                            <li><i class="fas fa-check"></i> Basic Report</li>
                         </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-hero btn-full">Select Plan</a>
+                        </div>
                     </div>
-
-                    <div class="pricing-card popular">
-                        <div class="popular-badge">Most Popular</div>
-                        <h3>Pro Check</h3>
-                        <div class="price">₹1.5<span>/page</span></div>
+                    <div class="pricing-card popular hover-lift">
+                        <span class="popular-badge">Most Popular</span>
+                        <h3>Pro</h3>
+                        <div class="price">₹199<span>/check</span></div>
                         <ul class="features-list">
-                            <li><i class="fas fa-check"></i> 101-500 pages</li>
-                            <li><i class="fas fa-check"></i> Advanced detection</li>
-                            <li><i class="fas fa-check"></i> Priority processing</li>
+                            <li><i class="fas fa-check"></i> Plagiarism + AI Check</li>
+                            <li><i class="fas fa-check"></i> Up to 500 Pages</li>
+                            <li><i class="fas fa-check"></i> Detailed Report</li>
+                            <li><i class="fas fa-check"></i> Priority Support</li>
                         </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-hero btn-full">Select Plan</a>
+                        </div>
                     </div>
-
-                    <div class="pricing-card">
+                    <div class="pricing-card hover-lift">
                         <h3>Enterprise</h3>
-                        <div class="price">₹1<span>/page</span></div>
+                        <div class="price">Custom</div>
                         <ul class="features-list">
-                            <li><i class="fas fa-check"></i> 1000+ pages</li>
-                            <li><i class="fas fa-check"></i> Premium features</li>
-                            <li><i class="fas fa-check"></i> Bulk processing</li>
+                            <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                            <li><i class="fas fa-check"></i> Full AI & Plagiarism Check</li>
+                            <li><i class="fas fa-check"></i> Custom Reports</li>
+                            <li><i class="fas fa-check"></i> Dedicated Support</li>
                         </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-hero btn-full">Contact Us</a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="pricing-cta">
-                    <a class="btn btn-hero btn-lg hover-scale" href="./check.html">
-                        Get Started Now
-                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Customer Reviews Section (Added Reviews) -->
-        <section class="reviews">
+        <!-- Thesis Banner -->
+        <section class="promo-banner" id="thesis-banner">
+            <div class="container promo-content">
+                <h2>Are you struggling with your thesis/dissertation?</h2>
+                <p>Let our expert team assist you in crafting a high-quality thesis or dissertation tailored to your needs.</p>
+                <div class="promo-buttons">
+                    <a href="#services-page" class="btn btn-hero btn-lg" data-page="services">Get Help Now</a>
+                    <button class="btn btn-outline btn-lg" onclick="dismissRibbon('thesis-banner')">Dismiss</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section class="comparison">
             <div class="container">
                 <div class="section-header">
-                    <h2>What Our Customers Say</h2>
-                    <p>Hear from students and professionals who trust DocGuardian for their plagiarism checks.</p>
+                    <h2>Why Plagario Stands Out</h2>
+                    <p>Compare our services with others to see the Plagario advantage.</p>
                 </div>
-
-                <div class="reviews-grid">
-                    <div class="review-card card-glow hover-lift animate-bounce-in">
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="review-text">"DocGuardian saved my thesis! Accurate and fast results."</p>
-                        <div class="review-author">- Alex Johnson, PhD Student</div>
+                <div class="comparison-grid">
+                    <div class="comparison-card hover-lift">
+                        <h3>Our Service</h3>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Comprehensive plagiarism and AI detection</li>
+                            <li><i class="fas fa-check"></i> Detailed, actionable reports</li>
+                            <li><i class="fas fa-check"></i> Fast processing with 24/7 support</li>
+                            <li><i class="fas fa-check"></i> Secure and encrypted document handling</li>
+                            <li><i class="fas fa-check"></i> Affordable pricing for all users</li>
+                        </ul>
                     </div>
-
-                    <div class="review-card card-glow hover-lift animate-bounce-in" style="animation-delay: 0.1s">
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="review-text">"Excellent service with detailed reports. Highly recommended."</p>
-                        <div class="review-author">- Sarah Lee, Content Writer</div>
-                    </div>
-
-                    <div class="review-card card-glow hover-lift animate-bounce-in" style="animation-delay: 0.2s">
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="review-text">"The AI enhancement is worth every penny. Super precise!"</p>
-                        <div class="review-author">- Mike Chen, Academic Researcher</div>
+                    <div class="comparison-card hover-lift">
+                        <h3>Others</h3>
+                        <ul class="features-list">
+                            <li><i class="fas fa-times"></i> Limited source database</li>
+                            <li><i class="fas fa-times"></i> Basic or unclear reports</li>
+                            <li><i class="fas fa-times"></i> Slower processing times</li>
+                            <li><i class="fas fa-times"></i> Questionable security measures</li>
+                            <li><i class="fas fa-times"></i> Higher costs for similar features</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
 
+        <!-- Scopus Ribbon -->
+        <section class="promo-ribbon" id="scopus-ribbon">
+            <div class="container promo-content">
+                <h3>Do you want us to publish in a Scopus indexed journal?</h3>
+                <div class="promo-buttons">
+                    <a href="#services-page" class="btn btn-hero" data-page="services">Yes, I want to publish in high quality journal</a>
+                    <button class="btn btn-outline" onclick="dismissRibbon('scopus-ribbon')">No, I will submit it myself</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
-
-    <!-- Toast Notifications -->
-    <div id="toast-container"></div>
-
-    <!-- Footer (Added for Contact with Email and WhatsApp Symbols) -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>DocGuardian</span>
-                </div>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Contact Us</a>
-                </div>
-                <div class="footer-contact">
-                    <a href="mailto:support@docguardian.com" class="contact-link">
-                        <i class="fas fa-envelope"></i> support@docguardian.com
-                    </a>
-                    <a href="https://wa.me/1234567890" class="contact-link" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                    </a>
-                </div>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon"><i class="fas fa-shield-alt"></i></span>
+                <span>Plagario</span>
             </div>
-            <div class="footer-bottom">
-                &copy; 2025 DocGuardian. All rights reserved.
+            <div class="footer-links">
+                <a href="#home-page">Home</a>
+                <a href="#services-page">Services</a>
+                <a href="#pricing-page">Pricing</a>
+                <a href="#about-page">About</a>
+                <a href="#check-page">Check Now</a>
             </div>
+            <div class="footer-contact">
+                <a href="#" class="contact-link"><i class="fas fa-envelope"></i> support@docguardian.com</a>
+                <a href="#" class="contact-link"><i class="fas fa-phone"></i> +91 9699925064</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Plagario. All rights reserved.
         </div>
     </footer>
 
-    <!-- <script src="script.js"></script> -->
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <h3>Submission Confirmed</h3>
+            <p>Your document has been submitted successfully!</p>
+            <div id="submission-details"></div>
+            <button class="btn btn-hero" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
 </body>
-
 </html>
